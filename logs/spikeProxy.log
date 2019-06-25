@@ -1,6 +1,0 @@
-{"L":"INFO","T":"2019-06-25T15:02:57.205+0800","C":"basic/main.go:49","M":"log 初始化成功","serviceName":"serviceName"}
-{"L":"INFO","T":"2019-06-25T15:02:57.433+0800","C":"basic/main.go:51","M":"无法获取网址","serviceName":"serviceName","url":"http://www.baidu.com","attempt":3,"backoff":"1s"}
-{"L":"ERROR","T":"2019-06-25T15:02:57.433+0800","C":"basic/main.go:57","M":"error","serviceName":"serviceName","key":"value"}
-2019-06-25T15:03:32.305+0800	INFO	basic/main.go:49	log 初始化成功	{"serviceName": "serviceName"}
-2019-06-25T15:03:32.527+0800	INFO	basic/main.go:51	无法获取网址	{"serviceName": "serviceName", "url": "http://www.baidu.com", "attempt": 3, "backoff": "1s"}
-2019-06-25T15:03:32.531+0800	ERROR	basic/main.go:57	error	{"serviceName": "serviceName", "key": "value"}

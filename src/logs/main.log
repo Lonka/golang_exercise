@@ -1,0 +1,2 @@
+{"level":"info","time":"2019-06-25T16:29:53.211+0800","linenum":"D:/Project/Self/Test Go/golang_exercise/src/main.go:8","msg":"Hello world","serviceName":"Main"}
+{"level":"error","time":"2019-06-25T16:29:53.428+0800","linenum":"D:/Project/Self/Test Go/golang_exercise/src/main.go:9","msg":"I'm Error","serviceName":"Main"}

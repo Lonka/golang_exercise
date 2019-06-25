@@ -1,4 +1,4 @@
-package main
+package logger
 
 import(
 	"go.uber.org/zap"
@@ -19,17 +19,6 @@ func main(){
 	}
 
 	atom := zap.NewAtomicLevelAt(zap.InfoLevel)
-
-	// config := zap.Config{
-	// 	Level:            atom,                                                // 日志级别
-	// 	Development:      true,                                                // 开发模式，堆栈跟踪
-	// 	Encoding:         "json",                                              // 输出格式 console 或 json
-	// 	EncoderConfig:    NewProductionEncoderConfig(),                                       // 编码器配置
-	// 	InitialFields:    map[string]interface{}{"serviceName": "spikeProxy"}, // 初始化字段，如：添加一个服务器名称
-	// 	OutputPaths:      []string{"stdout", "./logs/spikeProxy.log"},         // 输出到指定文件 stdout（标准输出，正常颜色） stderr（错误输出，红色）
-	// 	ErrorOutputPaths: []string{"stderr"},
-	// }
-
 	core := zapcore.NewCore(
 						zapcore.NewJSONEncoder(NewDevelopmentEncoderConfig()),// 編碼器配置
 						zapcore.NewMultiWriteSyncer(zapcore.AddSync(os.Stdout),zapcore.AddSync(&hook)),// 列印到控制檯和檔案
